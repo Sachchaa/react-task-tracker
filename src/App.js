@@ -2,6 +2,7 @@ import Tasks from './components/tasks'
 import { useState } from 'react'
 import AddTask from './components/addTask'
 import Header from './components/header'
+import Footer from './components/footer'
 
 function App() {
 
@@ -63,6 +64,7 @@ function App() {
           <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
         ) : ('No Tasks to show')
       }
+      <Footer />
     </div>
   )
 }
